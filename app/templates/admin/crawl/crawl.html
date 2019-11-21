@@ -1,0 +1,27 @@
+{% import "bootstrap/wtf.html" as wtf %}
+{% extends "base.html" %}
+{% block title %}
+   Crawl Page
+{% endblock %}
+{% block body %}
+<div class="content-section">
+ <div class="outer">
+    <div class="middle">
+      <div class="inner">
+        <div class="center">
+          
+                <h1>Crawl</h1>
+                <h3>Jiji Crawl url:</h3>
+                <p>https://jiji.ng/api_web/v1/listing?slug=cars&page=1</p>
+
+
+                <h3>Car45 Crawl url:</h3>
+                <p>https://buy.cars45.com/cars</p>
+            <br/>
+            {{ wtf.quick_form(form) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
